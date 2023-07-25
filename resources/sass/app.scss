@@ -6,3 +6,9 @@
 
 // Bootstrap
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+
+.list-group {
+    overflow-y: scroll;
+    height: 200px;
+}

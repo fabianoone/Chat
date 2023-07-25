@@ -70,14 +70,29 @@
 
     <div class="container">
         <div class="row" id="app">
-            <ul class="list-group offset-4 col-4">
+            <div class="offset-4 col-4">
+
                 <li class="list-group-item active">Chat Room</li>
-                <li class="list-group-item">just text...</li>
-                <li class="list-group-item">just text...</li>
-                <li class="list-group-item">just text...</li>
-                <li class="list-group-item">just text...</li>
-                <input type="text" name="message" id="message" class="form-control" placeholder="Type your message here...">
-            </ul>
+                <ul class="list-group" v-chat-scroll>
+
+                    <message
+                        :key="value.index"
+                        v-for="value in chat.message"
+                    >
+                        @{{ value }}
+                    </message>
+                </ul>
+                <label for="message"></label>
+                <input
+                    type="text"
+                    name="message"
+                    id="message"
+                    class="form-control"
+                    placeholder="Type your message here..."
+                    v-model="message"
+                    v-on:keyup.enter="send"
+                />
+            </div>
         </div>
     </div>
 
