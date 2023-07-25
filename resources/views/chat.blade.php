@@ -76,8 +76,9 @@
                 <ul class="list-group" v-chat-scroll>
 
                     <message
-                        :key="value.index"
                         v-for="value in chat.message"
+                        :key="value.index"
+                        color="warning"
                     >
                         @{{ value }}
                     </message>
