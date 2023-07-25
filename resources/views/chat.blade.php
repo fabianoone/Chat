@@ -70,7 +70,7 @@
 
     <div class="container">
         <div class="row" id="app">
-            <div class="offset-4 col-4">
+            <div id="container-chat" class="offset-4 col-4">
 
                 <li class="list-group-item active">Chat Room</li>
                 <ul class="list-group" v-chat-scroll>

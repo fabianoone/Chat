@@ -9453,7 +9453,7 @@ a.text-gray-dark:hover {
   }
 }
 
-.list-group {
+#container-chat .list-group {
   overflow-y: scroll;
   height: 200px;
 }
